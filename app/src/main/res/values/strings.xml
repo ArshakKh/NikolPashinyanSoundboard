@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Nikol Pashinyan Soundboard</string>
+
+    <!--NIKOL PASHINYAN-->
+    <string name="btn0">Մարդա վատացե</string>
+    <string name="btn1">Ենտեղելա մարդ վատացել</string>
+    <string name="btn2">Հանգիստ Նստեք տեղներդ</string>
+    <string name="btn3">Հանգստացեք</string>
+    <string name="btn4">Հանգստացի</string>
+    <string name="btn5">Կարգի հրավիրեք</string>
+    <string name="btn6">Կաստըմ շլվար</string>
+    <string name="btn7">Կայչայտ</string>
+    <string name="btn8">Աշոտյան</string>
+    <string name="btn9">Դուք լրջանալու կարիք ունեք</string>
+    <string name="btn10">Ստե բազար չի արա</string>
+    <string name="btn11">Թուրքը լսի ուրախանա</string>
+    <string name="btn12">Վալերյանկա չկա</string>
+    <string name="btn13">Խորհուրդ</string>
+    <string name="btn14">Բա սրա համար էինք արել</string>
+    <string name="btn15">Բիզնես</string>
+    <string name="btn16">մենք համաձայն ենք</string>
+    <string name="btn17">կարտոֆիլ բերել</string>
+    <string name="btn18">պարտադիր չէր</string>
+    <string name="btn19">Մանկավարժը չի ստանում</string>
+    <string name="btn20">կոնկրետ օրինակ բերեցի</string>
+    <string name="btn21">1000 դրամով</string>
+    <string name="btn22">կամ 2000</string>
+    <string name="btn23">կամ 3000</string>
+    <string name="btn24">պլյուս, մինուս</string>
+    <string name="btn25">ոչ պոպուլյար ա</string>
+    <string name="btn26">գիտեք պռոբլեմը ինչում է</string>
+    <string name="btn27">25000 դրամ</string>
+    <string name="btn28">մեր սիրելի տատիկը</string>
+    <string name="btn29">ուսանող ժամանակ</string>
+    <string name="btn30">ուզում ենք, թե չէ</string>
+    <string name="btn31">չեն կարող լուծվել</string>
+    <string name="btn32">ՀՀ Հպարտ քաղաքացիեր</string>
+    <string name="btn33">Արցախի Հպարտ քաղաքացիեր</string>
+    <string name="btn34">Սփյուրքի Հպարտ հայություն</string>
+    <string name="btn35">7 օր</string>
+    <string name="btn36">Աշո՜տ</string>
+    <string name="btn37">Այնպես որ արժի</string>
+    <string name="btn38">ԵՎ ուրեմն</string>
+    <string name="btn39">Դուք ձեզ ինչ եք թույլ տալիս</string>
+    <string name="btn40">Պարկացնել Ասֆալտներին</string>
+    <string name="btn41">վախենում են բառապաշարի ինսուլտ ստանան</string>
+    <string name="btn42">Բավարար չեն ստանա</string>
+    <string name="btn43">Ցըմփ</string>
+    <string name="btn44">царь ненастоящий</string>
+    <string name="btn45">Վեր կաց ԵՎ քայլիր</string>
+    <string name="btn46">Լվացքի մեքենայի վարկը</string>
+    <string name="btn47">դե ֆակտո</string>
+    <string name="btn48">դե յուրե</string>
+
+    <!--MAESTRO-->
+    <string name="m_btn100">եթե դուք էլ ինձ Համակիր լինեք</string>
+    <string name="m_btn101">Փաշինյանը Հնագույն Գործիչ է</string>
+    <string name="m_btn102">Եթե իմ տունը շրջափակեն…</string>
+    <string name="m_btn103">զանգեք, պայմանավորվենք</string>
+    <string name="m_btn104">տեսակետը</string>
+    <string name="m_btn105">ճշմարտությունը 2 հատ է</string>
+    <string name="m_btn106">չափներդ ճանաչեք</string>
+    <string name="m_btn107">մեզանից լավը չկա</string>
+    <string name="m_btn108">ձեր մերկությունը լավ եմ տեսել</string>
+    <string name="m_btn109">հայտնի դարձան</string>
+    <string name="m_btn110">հրապարակում 100.000 մարդ</string>
+    <string name="m_btn111">ես անհատական չեմ</string>
+    <string name="m_btn112">համբերեք</string>
+    <string name="m_btn113">էգ և որձ չկա</string>
+    <string name="m_btn114">ուղեղը սիստեմատիկ չի կարողանում գործել</string>
+    <string name="m_btn115">ուղեղը լվացքի մեքենա չի</string>
+    <string name="m_btn116">հիմնական տերը մենք ենք</string>
+    <string name="m_btn117">քաջ նազարը</string>
+    <string name="m_btn118">ապրելու իրավունք ունեն</string>
+    <string name="m_btn119">ոչ արտահայտություն չկա</string>
+    <string name="m_btn120">դա ձեր իմացած գողությունը չէ</string>
+    <string name="m_btn121">գողանալ բառը չէ</string>
+    <string name="m_btn122">բոլորը պետք է փոխհարաբերվեն</string>
+    <string name="m_btn123">ցմահ կլինի մահապատիժը</string>
+    <string name="m_btn124">գախտնի բառը թաքուն բառը չի</string>
+    <string name="m_btn125">երեխաները պարտավոր են մեծանալ</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textFavorite">There will be show your favorite sounds</string>
+    <string name="grmnda">grmnda</string>
+    <string name="suggest">Suggest</string>
+    <string name="share">share</string>
+    <string name="about_us">About Us</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="nicole_pashinyan_soundbord">Nicole Pashinyan Soundbord</string>
+    <string name="welcomeicon">welcomeIcon</string>
+    <string name="nicole_pashinyan">Nicole Pashinyan</string>
+    <string name="maestro">Maestro</string>
+    <string name="mixed">Mixed</string>
+</resources>

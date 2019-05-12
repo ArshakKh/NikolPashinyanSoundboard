@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/suggest_btn"
+        android:checked="true"
+        android:icon="@drawable/ic_library_add_black_24dp"
+        android:title="@string/suggest"
+        app:showAsAction="ifRoom" />
+    <!--<item-->
+        <!--android:id="@+id/about_us"-->
+        <!--android:title="@string/about_us" />-->
+</menu>

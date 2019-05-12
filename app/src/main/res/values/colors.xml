@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a6572</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#efebe9</color>
+    <color name="text_light">#ffffff</color>
+    <color name="myBlu">#b71c1c</color>
+    <color name="myWhite">#47b71c1c</color>
+    <color name="apricote">#344955</color>
+    <color name="bar">#d2dbe0</color>
+    <color name="navBarTint">#FAAB1A</color>
+    <color name="button">#546e7a</color>
+    <color name="primary_text_material_dark">#344955</color>
+    <color name="background">#edf0f2</color>
+    <color name="DarkText">#212121</color>
+
+    <color name="m_apricote">#212121</color>
+    <color name="m_button">#424242</color>
+    <color name="m_navBarTint">#2962FF</color>
+</resources>
