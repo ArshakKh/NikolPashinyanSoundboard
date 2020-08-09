@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <android.support.design.bottomappbar.BottomAppBar
+    <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar_m"
         style="@style/Widget.MaterialComponents.BottomAppBar"
         android:layout_width="match_parent"
@@ -22,9 +22,9 @@
         app:fabAlignmentMode="center"
         app:hideOnScroll="true"
         app:layout_scrollFlags="scroll|enterAlways"
-        app:navigationIcon="@drawable/ic_share" />
+        app:navigationIcon="@drawable/ic_share_light" />
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_m"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,8 +41,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-5997286771009050/7604442219"
+        ads:adUnitId="@string/ad_banner_id"
         ads:layout_anchor="@+id/frame1_m"
         ads:layout_anchorGravity="top|center" />
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

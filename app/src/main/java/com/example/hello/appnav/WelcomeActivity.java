@@ -2,12 +2,14 @@ package com.example.hello.appnav;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hello.appnav.maestroActivity.MaestroActivity;
 
@@ -35,7 +37,38 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        boolean firstStart = prefs.getBoolean("firstStart", true);
+
+        if(firstStart){
+            showStartDialog();
+        }
+
     }
+
+    private void showStartDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Արդեն հնարավոր է")
+                .setMessage("ձայներով կիսվել ընկերների հետ, պարզապես սեխմած պահելով ձայնի վրա և ընտրել Share կոճակը")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .create().show();
+
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean("firstStart", false);
+        editor.apply();
+
+    }
+
+
+
+
     @Override
     public void onBackPressed() {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);

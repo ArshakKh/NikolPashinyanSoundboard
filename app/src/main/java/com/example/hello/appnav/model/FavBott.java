@@ -11,7 +11,7 @@ import java.util.List;
 public class FavBott extends Model {
 
     @Column( name = "bot_id",unique = true, onUniqueConflict = Column.ConflictAction.REPLACE )
-    private int buttonId;
+    public int buttonId;
     @Column( name = "bot_text",unique = true, onUniqueConflict = Column.ConflictAction.REPLACE)
     private String buttonText;
 

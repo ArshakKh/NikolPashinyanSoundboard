@@ -3,7 +3,7 @@
 
     <!--NIKOL PASHINYAN-->
     <string name="btn0">Մարդա վատացե</string>
-    <string name="btn1">Ենտեղելա մարդ վատացել</string>
+    <string name="btn1">էնտեղելա մարդ վատացել</string>
     <string name="btn2">Հանգիստ Նստեք տեղներդ</string>
     <string name="btn3">Հանգստացեք</string>
     <string name="btn4">Հանգստացի</string>
@@ -83,9 +83,8 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="textFavorite">There will be show your favorite sounds</string>
-    <string name="grmnda">grmnda</string>
     <string name="suggest">Suggest</string>
-    <string name="share">share</string>
+    <string name="share">Share</string>
     <string name="about_us">About Us</string>
     <string name="remove_from_favorites">Remove from favorites</string>
     <string name="add_to_favorites">Add to favorites</string>
@@ -94,4 +93,8 @@
     <string name="nicole_pashinyan">Nicole Pashinyan</string>
     <string name="maestro">Maestro</string>
     <string name="mixed">Mixed</string>
+    <string name="ad_identification_id">ca-app-pub-5997286771009050~9914555568</string>
+    <string name="ad_banner_id">ca-app-pub-5997286771009050/7604442219</string>
+    <string name="ad_init_id">ca-app-pub-5997286771009050/1129467542</string>
+    <string name="ad_Rew_id">ca-app-pub-5997286771009050/2462251587</string>
 </resources>

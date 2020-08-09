@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "626362173296",
-    "firebase_url": "https://nikol-pashinyan-soundboard.firebaseio.com",
-    "project_id": "nikol-pashinyan-soundboard",
-    "storage_bucket": "nikol-pashinyan-soundboard.appspot.com"
+    "project_number": "1075099441980",
+    "firebase_url": "https://nikol-pashinyan-233b1.firebaseio.com",
+    "project_id": "nikol-pashinyan-233b1",
+    "storage_bucket": "nikol-pashinyan-233b1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:626362173296:android:e60cfb55b9f36455",
+        "mobilesdk_app_id": "1:1075099441980:android:340baced1ce7eea5d0dc39",
         "android_client_info": {
           "package_name": "com.catchMash.hello.appnav"
         }
       },
       "oauth_client": [
         {
-          "client_id": "626362173296-h53dfqnqa4eoo6bvnprqt9ptgcmsr2n5.apps.googleusercontent.com",
+          "client_id": "1075099441980-n42uski6sscn3ioqhe2qcc47shalvuia.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.catchMash.hello.appnav",
-            "certificate_hash": "f7906c2ddd470df1af27caaff7104ba5a725606e"
+            "certificate_hash": "1fe794c8ac97d2131e9896dbd4dafe0f402e6dc0"
           }
         },
         {
-          "client_id": "626362173296-r3fhjsd10rdu8ka8i640chtpp8limreu.apps.googleusercontent.com",
+          "client_id": "1075099441980-k57t7e351a98l22if7l1qb02o5q4vsvs.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAuyvOIbSn4xsTaX8isHfpsQ8UpX75qTks"
+          "current_key": "AIzaSyByYyOm08KxLMqwUJmmRGikpl4Ye42wwhw"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "626362173296-r3fhjsd10rdu8ka8i640chtpp8limreu.apps.googleusercontent.com",
+              "client_id": "1075099441980-k57t7e351a98l22if7l1qb02o5q4vsvs.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

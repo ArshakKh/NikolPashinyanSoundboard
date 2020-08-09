@@ -2,8 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/optionFav"
-        android:title="@string/add_to_favorites"
         android:icon="@drawable/star"
+        android:title="@string/add_to_favorites"
+
+        />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_dark"
+        android:title="@string/share"
 
         />
 </menu>

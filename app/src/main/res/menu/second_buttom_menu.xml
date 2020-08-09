@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--<item-->
-        <!--android:id="@+id/ring"-->
-        <!--android:title="Set as ringtone"-->
-        <!--android:icon="@drawable/ringtone"-->
-
-        <!--/>-->
-    <!--<item-->
-        <!--android:id="@+id/not"-->
-        <!--android:title="Set as Notification"-->
-        <!--android:icon="@drawable/notifications"-->
-
-        <!--/>-->
     <item
         android:id="@+id/del"
-        android:title="@string/remove_from_favorites"
         android:icon="@drawable/remove"
+        android:title="@string/remove_from_favorites" />
 
-        />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_dark"
+        android:title="@string/share" />
 </menu>

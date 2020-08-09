@@ -2,31 +2,45 @@ package com.example.hello.appnav.maestroActivity;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.design.bottomappbar.BottomAppBar;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.os.Environment;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.example.hello.appnav.BuildConfig;
-import com.example.hello.appnav.FirstFragment;
 import com.example.hello.appnav.R;
-import com.example.hello.appnav.SecondFragment;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.RequestConfiguration;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.io.File;
+import java.util.Collections;
 
 import hotchemi.android.rate.AppRate;
+
+import static com.activeandroid.Cache.getContext;
+import static com.example.hello.appnav.NikolActivity.deleteDir;
 
 public class MaestroActivity extends AppCompatActivity {
     BottomAppBar bottomAppBar;
     private FloatingActionButton floatingActionButton;
     private boolean isFabTapped = true;
+    private File dir = new File(Environment.getExternalStorageDirectory() + "/Soundboard");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,16 +53,10 @@ public class MaestroActivity extends AppCompatActivity {
         bottomAppBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-//                switch (menuItem.getItemId()){
-//                    case R.id.suggest_btn:
                 String url = "https://docs.google.com/forms/d/e/1FAIpQLSfW6JpCt2I68iMsEsR4s3hIxSgzi6gtGTppGWqCLJb1R0aK6g/viewform?usp=pp_url";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
-//                        break;
-//                    case R.id.about_us:
-//                        break;
-//                }
                 return false;
             }
         });
@@ -68,13 +76,34 @@ public class MaestroActivity extends AppCompatActivity {
         });
 
         //// AdMob Code ////
-        MobileAds.initialize(this,"ca-app-pub-5997286771009050~9914555568");
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
         AdView mAdView = findViewById(R.id.adView_m);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        new RequestConfiguration.Builder().setTestDeviceIds(Collections.singletonList("8F54F510AAE49F7A02AFD8CFF4BBDC1F"));
+
         if (savedInstanceState == null) {
             handleFrame(new M_firstFragment());
-        }handleFab();
+        }
+        handleFab();
+
+        mAdView.setAdListener(new AdListener() {
+
+            @Override
+            public void onAdFailedToLoad(LoadAdError error) {
+                String errorDomain = error.getDomain();
+                int errorCode = error.getCode();
+                String errorMessage = error.getMessage();
+                AdError cause = error.getCause();
+                Log.d("Ads", error.toString());
+            }
+
+        });
 
         //// Rate us ////
         AppRate.with(this)
@@ -84,13 +113,15 @@ public class MaestroActivity extends AppCompatActivity {
                 .monitor();
         AppRate.showRateDialogIfMeetsConditions(this);
     }
+
     private void handleFrame(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
         fragmentTransaction.replace(R.id.frame1_m, fragment);
         fragmentTransaction.commit();
     }
-    private void handleFab(){
+
+    private void handleFab() {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,6 +137,14 @@ public class MaestroActivity extends AppCompatActivity {
                 isFabTapped = !isFabTapped;
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (deleteDir(dir)) {
+            deleteDir(dir);
+        }
     }
 }
 
