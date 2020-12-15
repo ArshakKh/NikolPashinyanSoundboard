@@ -3,67 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:gravity="center"
     tools:context="com.example.hello.appnav.WelcomeActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
+        android:id="@+id/nikolLayout"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:orientation="vertical">
+        android:layout_marginStart="0dp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:id="@+id/nikol"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
+            android:layout_gravity="center|bottom"
             android:contentDescription="@string/welcomeicon"
-            android:focusable="true"
-            android:src="@raw/nikol_logo" />
+            android:src="@drawable/nikol_logo" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:drawablePadding="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="@string/nicole_pashinyan"
             android:textSize="20sp" />
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp"
+        android:id="@+id/maestroLayout"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:orientation="vertical">
+        android:layout_marginStart="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:id="@+id/maestro"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
+            android:layout_gravity="center|bottom"
             android:contentDescription="@string/welcomeicon"
-            android:focusable="true"
-            android:src="@raw/maestro" />
+            android:src="@drawable/maestro_logo" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="@string/maestro"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 </LinearLayout>
